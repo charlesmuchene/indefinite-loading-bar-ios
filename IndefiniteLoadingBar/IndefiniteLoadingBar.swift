@@ -60,6 +60,7 @@ class IndefiniteLoadingBar: UIView {
         let frame = CGRect(x: -pieceWidth, y: 0, width: pieceWidth, height: self.frame.size.height)
         let view = UIView(frame: frame)
         view.clipsToBounds = true
+        view.layer.cornerRadius = 3.0
         view.backgroundColor = progressColor
         return view
     }
